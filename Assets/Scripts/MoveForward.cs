@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class Move : MonoBehaviour
+public class MoveForward : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
-    void Update()
+    private void Update()
     {
         transform.Translate(Time.deltaTime * _speed, 0, 0);
     }
